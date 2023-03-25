@@ -39,7 +39,7 @@ function mul_numbers(){
     var num2= parseInt(document.getElementById('num2').value) ;
     
     
-    var mul = num1*num2;
+    var mul = num1 * num2;
     
     document.getElementById('show-result').innerHTML=`Multiplication of ${num1} and ${num2} = ${mul}`
     
