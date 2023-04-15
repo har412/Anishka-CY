@@ -1,11 +1,19 @@
+// Include Express 
 const express = require('express');
 const app=express();
 
-
-app.get('/',(req,res)=>{
-    res.send("Hello My First Backend")
+// Routes
+app.get('/About',(req,res)=>{
+    res.render("Hello My First Backend")
 })
+// Router
+app.get('/home',(req,res)=>{
+    res.send("harkirat Singh")
+})
+app.post('/Contact/submit',(req,res)=>{
 
-app.listen(6000,()=>{
-    console.log('Server listening on port 6000')
+})
+// Serve all the time and takes the request from the frontend
+app.listen(8080,()=>{
+    console.log('Server listening on port 8080')
 })
